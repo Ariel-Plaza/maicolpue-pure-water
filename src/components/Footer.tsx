@@ -1,4 +1,4 @@
-import { WaterDrop } from "@/components/icons";
+import logoSsr from "@/assets/logo-ssr.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,9 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center">
-              <WaterDrop className="w-6 h-6 text-background" />
-            </div>
+            <img src={logoSsr} alt="SSR Maicolpue Logo" className="w-12 h-12 object-contain bg-background/90 rounded-lg p-1" />
             <div>
               <h3 className="font-display font-bold text-lg">SSR Maicolpue</h3>
               <p className="text-sm text-background/60">Agua Potable Rural</p>
